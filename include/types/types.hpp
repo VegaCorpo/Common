@@ -1,7 +1,6 @@
 #pragma once
 
-namespace common
-{
+namespace common {
     enum class ModuleType
     {
         PHYSICS,
