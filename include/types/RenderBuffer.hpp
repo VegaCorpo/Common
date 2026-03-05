@@ -3,8 +3,7 @@
 #include <cstdint>
 #include <vector>
 
-namespace common
-{
+namespace common {
     // Represents a single vertex used for rendering (triangles).
     struct Vertex {
 
@@ -42,7 +41,7 @@ namespace common
     };
 
     // Contains the full set of rendering data produced by the UI system (for a single frame)
-    struct RenderDrawData {
+    struct RenderDataBuffer {
 
             // Vertex buffer containing all UI vertices for the frame.
             std::vector<Vertex> vertices;
