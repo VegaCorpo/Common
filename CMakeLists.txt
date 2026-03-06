@@ -11,9 +11,12 @@ set(CPM_USE_LOCAL_PACKAGES ON)
 
 file(GLOB_RECURSE src "include/*.hpp")
 
-add_library(Common INTERFACE ${src})
+add_library(Common INTERFACE)
 
-target_sources(Common
+target_include_directories(Common
     INTERFACE
-    src
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
 )
+
+target_sources(Common INTERFACE ${src})
