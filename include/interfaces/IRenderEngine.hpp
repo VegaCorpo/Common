@@ -3,7 +3,7 @@
 #include <entt/entt.hpp>
 #include "../types/RenderDataBuffer.hpp"
 
-namespace render {
+namespace common {
     class IRenderEngine {
         public:
             virtual ~IRenderEngine() = default;
@@ -44,4 +44,4 @@ namespace render {
              */
             virtual void render() = 0;
     };
-} // namespace render
+} // namespace common
