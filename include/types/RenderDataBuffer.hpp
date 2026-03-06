@@ -6,7 +6,6 @@
 namespace common {
     // Represents a single vertex used for rendering (triangles).
     struct Vertex {
-
             // Screen-space position of the vertex
             float x;
             float y;
@@ -23,7 +22,6 @@ namespace common {
 
     // A renderer will iterate through these commands to perform draw calls (represent single draw command).
     struct DrawCmd {
-
             // Offset inside the index buffer where this draw call begins.
             uint32_t indexOffset;
 
@@ -42,7 +40,6 @@ namespace common {
 
     // Contains the full set of rendering data produced by the UI system (for a single frame)
     struct RenderDataBuffer {
-
             // Vertex buffer containing all UI vertices for the frame.
             std::vector<Vertex> vertices;
 
