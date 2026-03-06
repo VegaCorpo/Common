@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../types/RenderBuffer.hpp"
+#include "../types/RenderDataBuffer.hpp"
 
 namespace common {
     class ILayer {
