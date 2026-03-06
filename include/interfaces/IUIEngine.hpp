@@ -1,7 +1,5 @@
 #pragma once
 
-#include "ILayer.hpp"
-
 namespace common {
     class IUIEngine {
 
@@ -9,8 +7,8 @@ namespace common {
             // Destructor
             virtual ~IUIEngine() = default;
 
-            // Method to set Layer according the GUI you want to use
-            virtual void setLayer(ILayer* layer) = 0;
+            // Init methods that must be call by Core
+            virtual void init() = 0;
 
             // Update UI frame and convert it for the renderer
             virtual void update(float dt, float w, float h) = 0;
