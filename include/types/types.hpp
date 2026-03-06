@@ -9,4 +9,11 @@ namespace common {
         INPUTS,
         LOADER
     };
+
+    enum class LoaderStatus
+    {
+        SUCCESS,
+        FAILED_TO_OPEN_FILESTREAM,
+        WRONG_SIMULATION_FORMAT
+    };
 }
