@@ -7,6 +7,7 @@ namespace common {
             // Destructor
             virtual ~IUIEngine() = default;
 
+            // Init methods that must be call by Core
             virtual void init() = 0;
 
             // Update UI frame and convert it for the renderer
