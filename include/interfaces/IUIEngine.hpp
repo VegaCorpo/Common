@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../types/RenderDataBuffer.hpp"
+
 namespace common {
     class IUIEngine {
 
@@ -12,5 +14,8 @@ namespace common {
 
             // Update UI frame and convert it for the renderer
             virtual void update(float dt, float w, float h) = 0;
+
+            // Get Vertex Buffer
+            virtual RenderDataBuffer getDataBuffer() = 0;
     };
 } // namespace ui
