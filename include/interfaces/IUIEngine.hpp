@@ -7,9 +7,8 @@
 namespace common {
     class IUIEngine {
 
-        using TextureLoader = std::function<unsigned int(unsigned char*, int, int)>;
-
         public:
+            using TextureLoader = std::function<unsigned int(unsigned char*, int, int)>;
             // Destructor
             virtual ~IUIEngine() = default;
 
