@@ -24,6 +24,10 @@ namespace common {
         MOVE_CAMERA_RIGHT,
         MOVE_CAMERA_UP,
         MOVE_CAMERA_DOWN,
+        ROTATE_CAMERA_UP,
+        ROTATE_CAMERA_DOWN,
+        ROTATE_CAMERA_LEFT,
+        ROTATE_CAMERA_RIGHT,
         CHANGE_SELECTION,
         CHANGE_SELECTION_REVERSED
     };
