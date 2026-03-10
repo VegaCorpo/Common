@@ -21,6 +21,16 @@ namespace common {
             [[nodiscard]] virtual bool isRunning() const = 0;
 
             /**
+             * @brief load a texture from pixels
+             *
+             * @param pixels the pixel data
+             * @param width the width of the texture
+             * @param height the height of the texture
+             * @return unsigned int texture id
+             */
+            virtual unsigned int loadTextureFromPixels(unsigned char* pixels, int width, int height) = 0;
+
+            /**
              * @brief Get the window handle
              *
              * @return void* to the window
