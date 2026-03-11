@@ -18,10 +18,19 @@ namespace common {
     };
 
     enum class Action {
+        // Renderer Actions
+        MOVE_CAMERA_FORWARD,
+        MOVE_CAMERA_BACKWARD,
+        MOVE_CAMERA_LEFT,
+        MOVE_CAMERA_RIGHT,
         MOVE_CAMERA_UP,
         MOVE_CAMERA_DOWN,
-        MOVE_CAMERA_RIGHT,
-        MOVE_CAMERA_LEFT,
+        ROTATE_CAMERA_UP,
+        ROTATE_CAMERA_DOWN,
+        ROTATE_CAMERA_LEFT,
+        ROTATE_CAMERA_RIGHT,
+
+        // UI Actions
         CHANGE_SELECTION,
         CHANGE_SELECTION_REVERSED
     };
