@@ -13,8 +13,6 @@ namespace common {
              */
             virtual void init() = 0;
 
-            virtual void initImGuiFont(void* sharedContext) = 0;
-
             /**
              * @brief Is the rendering engine still running
              *

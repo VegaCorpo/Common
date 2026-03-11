@@ -22,8 +22,5 @@ namespace common {
 
             // Get Vertex Buffer
             virtual RenderDataBuffer getDataBuffer() = 0;
-
-            // Recover UIContext
-            virtual void* getNativeContext() = 0;
     };
 } // namespace ui
