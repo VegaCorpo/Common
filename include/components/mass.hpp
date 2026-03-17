@@ -1,9 +1,8 @@
 #pragma once
 
-namespace components {
-    struct Mass
-    {
+namespace common::components {
+    struct Mass {
             float mantissa;
             int exponent;
     };
-} // namespace components
+} // namespace common::components
