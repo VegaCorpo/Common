@@ -7,6 +7,8 @@ namespace common {
     std::string ASSETS_PATH = "Renderer/assets/";
     std::string TEXTURE_PATH = ASSETS_PATH + "textures/";
 
+    constexpr char DEFAULT_TEXTURE_ID[] = "DEFAULT";
+
     const std::unordered_map<std::string, std::string> textureMap = {
         {"Sun", TEXTURE_PATH + "sun.jpg"},
         {"Earth", TEXTURE_PATH + "earth.jpg"},
