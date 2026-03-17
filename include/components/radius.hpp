@@ -1,7 +1,7 @@
 #pragma once
 
-namespace common {
+namespace common::components {
     struct Radius {
             float value;
     };
-} // namespace common
+} // namespace common::components
