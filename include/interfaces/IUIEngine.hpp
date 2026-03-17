@@ -5,9 +5,10 @@
 #include "../types/RenderDataBuffer.hpp"
 
 namespace common {
-    class IUIEngine {
 
-        using TextureLoader = std::function<unsigned int(unsigned char*, int, int)>;
+    using TextureLoader = std::function<unsigned int(unsigned char*, int, int)>;
+    
+    class IUIEngine {
 
         public:
             // Destructor
