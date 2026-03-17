@@ -2,7 +2,7 @@
 
 namespace components {
     struct Mass {
-            double mantissa;
+            float mantissa;
             int exponent;
     };
 } // namespace components
