@@ -1,10 +1,9 @@
 #pragma once
 
-namespace components {
-    struct Velocity
-    {
-            float x = 0;
-            float y = 0;
-            float z = 0;
+namespace common::components {
+    struct Velocity {
+            double x = 0;
+            double y = 0;
+            double z = 0;
     };
-} // namespace components
+} // namespace common::components
