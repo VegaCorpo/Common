@@ -1,8 +1,8 @@
 #pragma once
 
 namespace common::components {
-    static constexpr unsigned char MAX_SIZE = 50;
+    static constexpr unsigned char MAX_TEXTURE_ID_LENGTH = 50;
     struct TextureId {
-            char value[MAX_SIZE];
+            char value[MAX_TEXTURE_ID_LENGTH];
     };
 } // namespace common::components
