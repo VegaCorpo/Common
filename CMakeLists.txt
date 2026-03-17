@@ -16,7 +16,7 @@ add_library(Common INTERFACE)
 target_include_directories(Common
     INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-        $<INSTALL_INTERFACE:.>
+        $<INSTALL_INTERFACE:include>
 )
 
 target_sources(Common INTERFACE ${src})
