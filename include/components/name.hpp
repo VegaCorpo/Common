@@ -1,8 +1,8 @@
 #pragma once
 
-namespace components {
+namespace common {
+    static constexpr unsigned char MAX_SIZE = 50;
     struct Name {
-            static constexpr unsigned char MAX_SIZE = 50;
             char value[MAX_SIZE];
     };
-} // namespace components
+} // namespace common
