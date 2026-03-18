@@ -2,6 +2,7 @@
 
 #include <entt/entt.hpp>
 #include "../types/RenderDataBuffer.hpp"
+#include <functional>
 
 namespace common {
     class IRenderEngine {
@@ -60,5 +61,7 @@ namespace common {
              * @brief render the current scene
              */
             virtual void render() = 0;
+
+            virtual void setUIRenderCallback(std::function<void(float, float, float)> cb) = 0;
     };
 } // namespace common
