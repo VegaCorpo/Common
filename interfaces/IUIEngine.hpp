@@ -25,6 +25,5 @@ namespace common {
             virtual RenderDataBuffer getDataBuffer() = 0;
 
             virtual void render() = 0;
-
     };
 } // namespace ui
