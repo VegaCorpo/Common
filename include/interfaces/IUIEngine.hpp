@@ -23,5 +23,7 @@ namespace common {
 
             // Get Vertex Buffer
             virtual RenderDataBuffer getDataBuffer() = 0;
+
+            virtual void render() = 0;
     };
 } // namespace ui
