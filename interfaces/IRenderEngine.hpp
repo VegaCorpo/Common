@@ -45,9 +45,16 @@ namespace common {
             virtual void setVertexBuffer(common::RenderDataBuffer& renderDataBuffer) = 0;
 
             /**
+             * @brief sync entities with the rendering engine
+             *
+             * @param registry the entity registry
+             */
+            virtual void syncIn(entt::registry& registry) = 0;
+
+            /**
              * @brief update the rendering engine
              */
-            virtual void update(entt::registry& registry) = 0;
+            virtual void update() = 0;
 
             /**
              * @brief render the current scene
