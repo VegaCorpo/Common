@@ -2,7 +2,6 @@
 
 #include <entt/entt.hpp>
 #include "../types/RenderDataBuffer.hpp"
-#include <functional>
 
 namespace common {
     class IRenderEngine {
@@ -20,6 +19,16 @@ namespace common {
              * @return true if running false otherwise
              */
             [[nodiscard]] virtual bool isRunning() const = 0;
+
+            /**
+             * @brief load a texture from pixels
+             *
+             * @param pixels the pixel data
+             * @param width the width of the texture
+             * @param height the height of the texture
+             * @return unsigned int texture id
+             */
+            virtual unsigned int loadTextureFromPixels(unsigned char* pixels, int width, int height) = 0;
 
             /**
              * @brief Get the window handle
@@ -44,7 +53,5 @@ namespace common {
              * @brief render the current scene
              */
             virtual void render() = 0;
-
-            virtual void setUIRenderCallback(std::function<void(float, float, float)> cb) = 0;
     };
 } // namespace common
