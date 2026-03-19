@@ -4,4 +4,10 @@ CPMDeclarePackage(glfw
     GIT_TAG 3.4
     SYSTEM YES
     EXCLUDE_FROM_ALL YES
+    OPTIONS
+        "GLFW_BUILD_DOCS OFF"
+        "GLFW_BUILD_TESTS OFF"
+        "GLFW_BUILD_EXAMPLES OFF"
+        "GLFW_BUILD_WAYLAND OFF"
+        "GLFW_BUILD_X11 ON" 
 )
