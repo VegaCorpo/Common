@@ -17,7 +17,8 @@ namespace common {
         WRONG_SIMULATION_FORMAT
     };
 
-    enum class Action {
+    enum class Action
+    {
         // Renderer Actions
         MOVE_CAMERA_FORWARD,
         MOVE_CAMERA_BACKWARD,
@@ -29,9 +30,10 @@ namespace common {
         ROTATE_CAMERA_DOWN,
         ROTATE_CAMERA_LEFT,
         ROTATE_CAMERA_RIGHT,
+        CHANGE_RESCALE_MODE,
 
         // UI Actions
         CHANGE_SELECTION,
-        CHANGE_SELECTION_REVERSED
+        CHANGE_SELECTION_REVERSED,
     };
-}
+} // namespace common
