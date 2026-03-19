@@ -1,6 +1,7 @@
 #pragma once
 
 #include <entt/entt.hpp>
+#include <functional>
 #include "../types/RenderDataBuffer.hpp"
 
 namespace common {
@@ -59,6 +60,6 @@ namespace common {
             /**
              * @brief render the current scene
              */
-            virtual void render() = 0;
+            virtual void render(std::function<void()> uiRender = nullptr) = 0;
     };
 } // namespace common
