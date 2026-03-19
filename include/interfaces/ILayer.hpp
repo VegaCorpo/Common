@@ -2,7 +2,7 @@
 #include <types/RenderDataBuffer.hpp>
 #include <interfaces/IUIEngine.hpp>
 
-namespace common {
+namespace ui {
     class ILayer {
         public:
 
