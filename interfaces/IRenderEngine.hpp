@@ -60,6 +60,6 @@ namespace common {
             /**
              * @brief render the current scene
              */
-            virtual void render(std::function<void()> uiRender = nullptr) = 0;
+            virtual void render(std::function<void()> uiRender) = 0;
     };
 } // namespace common
