@@ -3,7 +3,6 @@
 #include <functional>
 
 #include "../types/RenderDataBuffer.hpp"
-#include <GLFW/glfw3.h>
 
 namespace common {
 
@@ -16,7 +15,7 @@ namespace common {
             virtual ~IUIEngine() = default;
 
             // Init methods that must be call by Core
-            virtual void init(GLFWwindow* window) = 0;
+            virtual void init(void* ) = 0;
 
             // Update UI frame and convert it for the renderer
             virtual void update(float dt, float w, float h) = 0;
