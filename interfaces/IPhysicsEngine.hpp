@@ -2,7 +2,7 @@
 
 #include <entt/entt.hpp>
 
-namespace Physics {
+namespace common {
     class IPhysicsEngine {
         public:
             virtual ~IPhysicsEngine() = default;
