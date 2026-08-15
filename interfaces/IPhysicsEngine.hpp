@@ -11,8 +11,8 @@ namespace common {
             virtual void init(common::WorldState) = 0;
             virtual void update(double dt) = 0;
             virtual void shutdown() = 0;
-            virtual void syncIn() = 0;
-            virtual void syncOut() = 0;
+            virtual void syncIn(common::WorldState) = 0;
+            virtual common::WorldState syncOut() = 0;
 
             [[nodiscard]] virtual std::string getName() const = 0;
     };
