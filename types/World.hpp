@@ -18,7 +18,7 @@ namespace common {
     };
 
     struct SpecificDataPhysics {
-        std::vector<size_t> entitisId;
+        std::vector<size_t> entitiesId;
         std::vector<common::components::Mass> masses;
         std::vector<common::components::Position> positions;
         std::vector<common::components::Velocity> velocities;
@@ -26,14 +26,14 @@ namespace common {
     };
 
     struct SpecificDataRender {
-        std::vector<size_t> entitisId;
+        std::vector<size_t> entitiesId;
         std::vector<common::components::Name> names;
         std::vector<common::components::Radius> radius;
         std::vector<common::components::Texture> textures;
     };
 
     struct SpecificDataUI {
-        std::vector<size_t> entitisId;
+        std::vector<size_t> entitiesId;
         std::vector<common::components::Name> names;
         std::vector<common::components::Mass> masses;
     };
