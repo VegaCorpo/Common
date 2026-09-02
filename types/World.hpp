@@ -20,6 +20,9 @@ namespace common {
     struct SpecificDataPhysics {
         std::vector<size_t> entitisId;
         std::vector<common::components::Mass> masses;
+        std::vector<common::components::Position> positions;
+        std::vector<common::components::Velocity> velocities;
+        std::vector<common::components::Acceleration> accelerations;
     };
 
     struct SpecificDataRender {
