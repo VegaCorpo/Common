@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../components/textureId.hpp"
+#include "../components/texture.hpp"
 #include <string>
 
 namespace common {
