@@ -1,8 +1,8 @@
 #pragma once
 
-#include <entt/entt.hpp>
 #include <functional>
 #include "../types/RenderDataBuffer.hpp"
+#include "../types/World.hpp"
 
 namespace common {
     class IRenderEngine {
@@ -12,7 +12,7 @@ namespace common {
             /**
              * @brief Initialize the rendering engine
              */
-            virtual void init() = 0;
+            virtual void init(common::SpecificDataRender data) = 0;
 
             /**
              * @brief Is the rendering engine still running
@@ -48,9 +48,9 @@ namespace common {
             /**
              * @brief sync entities with the rendering engine
              *
-             * @param registry the entity registry
+             * @param world the latest published world state
              */
-            virtual void syncIn(entt::registry& registry) = 0;
+            virtual void syncIn(const common::WorldState& world) = 0;
 
             /**
              * @brief update the rendering engine
