@@ -1,8 +1,8 @@
 #pragma once
 
 #include <functional>
-#include "../types/RenderDataBuffer.hpp"
-#include "../types/World.hpp"
+#include "types/RenderDataBuffer.hpp"
+#include "types/World.hpp"
 
 namespace common {
     class IRenderEngine {

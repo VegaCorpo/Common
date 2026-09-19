@@ -1,13 +1,13 @@
 #pragma once
 
 #include <vector>
-#include "../components/position.hpp"
-#include "../components/velocity.hpp"
-#include "../components/acceleration.hpp"
-#include "../components/mass.hpp"
-#include "../components/name.hpp"
-#include "../components/radius.hpp"
-#include "../components/texture.hpp"
+#include "components/position.hpp"
+#include "components/velocity.hpp"
+#include "components/acceleration.hpp"
+#include "components/mass.hpp"
+#include "components/name.hpp"
+#include "components/radius.hpp"
+#include "components/texture.hpp"
 
 namespace common {
     struct WorldState {

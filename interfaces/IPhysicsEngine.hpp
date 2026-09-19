@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "../types/World.hpp"
+#include "types/World.hpp"
 
 namespace common {
     class IPhysicsEngine {

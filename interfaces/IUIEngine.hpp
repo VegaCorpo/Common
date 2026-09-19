@@ -2,7 +2,7 @@
 
 #include <functional>
 
-#include "../types/RenderDataBuffer.hpp"
+#include "types/RenderDataBuffer.hpp"
 
 namespace common {
 
