@@ -1,14 +1,13 @@
 #pragma once
 
 #include <functional>
+#include "interfaces/IModule.hpp"
 #include "types/RenderDataBuffer.hpp"
 #include "types/World.hpp"
 
 namespace common {
-    class IRenderEngine {
+    class IRenderEngine : public IModule {
         public:
-            virtual ~IRenderEngine() = default;
-
             /**
              * @brief Initialize the rendering engine
              */

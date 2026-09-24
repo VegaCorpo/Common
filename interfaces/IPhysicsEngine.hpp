@@ -1,13 +1,12 @@
 #pragma once
 
 #include <string>
+#include "interfaces/IModule.hpp"
 #include "types/World.hpp"
 
 namespace common {
-    class IPhysicsEngine {
+    class IPhysicsEngine : public IModule {
         public:
-            virtual ~IPhysicsEngine() = default;
-
             virtual void init(common::SpecificDataPhysics) = 0;
             virtual void update(double dt) = 0;
             virtual void shutdown() = 0;
