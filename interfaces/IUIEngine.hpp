@@ -17,7 +17,7 @@ namespace common {
             virtual void init(void* windowHandle, common::SpecificDataUI &specificDataUI) = 0;
 
             // Update UI frame and convert it for the renderer
-            virtual void update(float dt, float w, float h) = 0;
+            virtual void update(common::WorldState &worldState) = 0;
 
             // Get Vertex Buffer
             virtual RenderDataBuffer getDataBuffer() = 0;
