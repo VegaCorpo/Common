@@ -2,18 +2,16 @@
 
 #include <functional>
 
-#include "../types/RenderDataBuffer.hpp"
+#include "interfaces/IModule.hpp"
+#include "types/RenderDataBuffer.hpp"
 
 namespace common {
 
     using TextureLoader = std::function<unsigned int(unsigned char*, int, int)>;
     
-    class IUIEngine {
+    class IUIEngine : public IModule {
 
         public:
-            // Destructor
-            virtual ~IUIEngine() = default;
-
             // Init methods that must be call by Core
             virtual void init(void* windowHandle) = 0;
 
