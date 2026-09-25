@@ -14,7 +14,7 @@ namespace common {
 
         public:
             // Init methods that must be call by Core
-            virtual void init(void* windowHandle, common::SpecificDataUI &specificDataUI) = 0;
+            virtual void init(void* windowHandle, const common::SpecificDataUI &specificDataUI) = 0;
 
             // Update UI frame and convert it for the renderer
             virtual void update(const common::WorldState &worldState) = 0;
