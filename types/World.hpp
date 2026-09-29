@@ -15,6 +15,7 @@ namespace common {
             std::vector<common::components::Position> positions;
             std::vector<common::components::Velocity> velocities;
             std::vector<common::components::Acceleration> accelerations;
+            std::vector<common::components::Radius> radius;
             std::vector<bool> collided;
     }; // size 80 B by entity
 
@@ -24,6 +25,7 @@ namespace common {
             std::vector<common::components::Position> positions;
             std::vector<common::components::Velocity> velocities;
             std::vector<common::components::Acceleration> accelerations;
+            std::vector<common::components::Radius> radius;
     }; // size 88 B by entity
 
     struct SpecificDataRender {
