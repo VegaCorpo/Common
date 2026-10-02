@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <cmath>
 #include <vector>
-#include "components/angular_velocity.hpp"
+#include "components/angularVelocity.hpp"
 #include "components/orientation.hpp"
 
 namespace common::rotation {

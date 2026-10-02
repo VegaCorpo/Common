@@ -2,7 +2,7 @@
 
 #include <vector>
 #include "components/acceleration.hpp"
-#include "components/angular_velocity.hpp"
+#include "components/angularVelocity.hpp"
 #include "components/mass.hpp"
 #include "components/name.hpp"
 #include "components/orientation.hpp"
