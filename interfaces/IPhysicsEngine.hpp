@@ -9,6 +9,8 @@ namespace common {
         public:
             virtual void init(common::SpecificDataPhysics) = 0;
             virtual void update(double dt) = 0;
+            virtual void physicsPause() = 0;
+            virtual void physicsUpdate() = 0;
             virtual void shutdown() = 0;
             virtual void syncIn(common::SpecificDataPhysics) = 0;
             virtual common::WorldState publish() = 0;
