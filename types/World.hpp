@@ -31,6 +31,7 @@ namespace common {
             std::vector<common::components::Radius> radius;
             std::vector<common::components::Orientation> orientations;
             std::vector<common::components::AngularVelocity> angularVelocities;
+            double epsilon = 1e-6;
     }; // size 88 B by entity
 
     struct SpecificDataRender {
