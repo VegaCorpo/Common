@@ -10,6 +10,13 @@ namespace common {
         LOADER
     };
 
+    enum class ModuleState
+    {
+        PAUSE,
+        RUNNING,
+        END,
+    };
+
     enum class LoaderStatus
     {
         SUCCESS,
