@@ -24,6 +24,14 @@ namespace common {
         WRONG_SIMULATION_FORMAT
     };
 
+    enum class IntegratorType
+    {
+        VERLET,
+        PEFRL,
+    };
+
+    inline constexpr IntegratorType DEFAULT_INTEGRATOR = IntegratorType::VERLET;
+
     enum class Action
     {
         // Renderer Actions

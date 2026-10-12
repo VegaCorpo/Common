@@ -10,6 +10,7 @@
 #include "components/radius.hpp"
 #include "components/texture.hpp"
 #include "components/velocity.hpp"
+#include "types.hpp"
 
 namespace common {
     struct WorldState {
@@ -32,6 +33,7 @@ namespace common {
             std::vector<common::components::Orientation> orientations;
             std::vector<common::components::AngularVelocity> angularVelocities;
             double epsilon = 0;
+            common::IntegratorType integrator = common::DEFAULT_INTEGRATOR;
     }; // size 88 B by entity
 
     struct SpecificDataRender {
