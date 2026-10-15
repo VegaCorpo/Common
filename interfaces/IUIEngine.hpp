@@ -23,5 +23,8 @@ namespace common {
             virtual RenderDataBuffer getDataBuffer() = 0;
 
             virtual void render() = 0;
+
+            // Get all the specificDataUI
+            virtual SpecificDataUI publishDataUi() = 0;
     };
 } // namespace ui
