@@ -30,7 +30,7 @@ namespace common {
         PEFRL,
     };
 
-    inline constexpr IntegratorType DEFAULT_INTEGRATOR = IntegratorType::VERLET;
+    inline constexpr IntegratorType DEFAULT_INTEGRATOR = IntegratorType::PEFRL;
 
     enum class Action
     {
