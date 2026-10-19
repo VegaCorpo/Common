@@ -25,6 +25,6 @@ namespace common {
             virtual void render() = 0;
 
             // Get all the specificDataUI
-            virtual SpecificDataUI publishDataUi() = 0;
+            virtual const SpecificDataUI &publishDataUi() = 0;
     };
 } // namespace ui
