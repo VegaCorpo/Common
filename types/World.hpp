@@ -45,5 +45,7 @@ namespace common {
             std::vector<size_t> entitiesId;
             std::vector<common::components::Name> names;
             std::vector<common::components::Mass> masses;
+
+            double timeScale;
     }; // size 66 B by entity
 } // namespace common
