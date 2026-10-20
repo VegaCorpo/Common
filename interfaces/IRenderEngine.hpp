@@ -11,7 +11,7 @@ namespace common {
             /**
              * @brief Initialize the rendering engine
              */
-            virtual void init(common::SpecificDataRender data) = 0;
+            virtual bool init(common::SpecificDataRender data) = 0;
 
             /**
              * @brief Is the rendering engine still running
