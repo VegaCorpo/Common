@@ -49,5 +49,6 @@ namespace common {
             std::vector<common::components::Mass> masses;
 
             double timeScale;
+            size_t camFocusEnt;
     }; // size 66 B by entity
 } // namespace common
