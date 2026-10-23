@@ -34,7 +34,7 @@ namespace common {
             std::vector<common::components::AngularVelocity> angularVelocities;
             double epsilon = 0;
             common::IntegratorType integrator = common::DEFAULT_INTEGRATOR;
-    }; // size 88 B by entitypublishDataUi
+    }; // size 88 B by entity
 
     struct SpecificDataRender {
             std::vector<size_t> entitiesId;
