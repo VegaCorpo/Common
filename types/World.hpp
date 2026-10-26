@@ -50,5 +50,7 @@ namespace common {
 
             double timeScale;
             size_t camFocusEnt;
+
+            bool isEditMode = false;
     }; // size 66 B by entity
 } // namespace common
