@@ -9,6 +9,7 @@ namespace common {
         public:
             virtual void init(common::SpecificDataPhysics) = 0;
             virtual void update(double dt) = 0;
+            [[nodiscard]] virtual double stepDuration() const = 0;
             virtual void physicsPause() = 0;
             virtual void physicsResume() = 0;
             virtual void shutdown() = 0;
