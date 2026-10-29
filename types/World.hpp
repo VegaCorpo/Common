@@ -52,5 +52,5 @@ namespace common {
             size_t camFocusEnt;
 
             bool isEditMode = false;
-    }; // size 66 B by entity
+    }; // size 96 B by entity
 } // namespace common
