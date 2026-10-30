@@ -1,6 +1,9 @@
 #pragma once
 
 #include "interfaces/IModule.hpp"
+#include "types/types.hpp"
+
+#include <queue>
 
 namespace common {
     class IInputEngine : public IModule {
@@ -9,5 +12,7 @@ namespace common {
             virtual void init() = 0;
 
             virtual void update() = 0;
+
+            virtual std::queue<common::Action> getActions() = 0;
     };
 } // namespace inputs
