@@ -55,7 +55,7 @@ namespace common {
 
             bool isEditMode = false;
 
-            std::optional<common::EntitySpawnRequest> draft;
+            std::optional<common::EntitySpawnRequest> entityAsked;
             bool spawnRequested = false;
     }; // size ~200+ B by entity
 } // namespace common
