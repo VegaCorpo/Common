@@ -11,5 +11,5 @@ namespace common {
 } // namespace common
 
 extern "C" {
-    const common::ModuleInfo* get_module_info();
+    common::ModuleInfo get_module_info();
 }
