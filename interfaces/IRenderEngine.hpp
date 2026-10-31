@@ -1,6 +1,7 @@
 #pragma once
 
 #include <functional>
+#include <queue>
 #include "interfaces/IModule.hpp"
 #include "types/RenderDataBuffer.hpp"
 #include "types/World.hpp"
@@ -50,6 +51,8 @@ namespace common {
              * @param world the latest published world state
              */
             virtual void syncIn(const common::WorldState& world) = 0;
+
+            virtual void handleActions(std::queue<common::Action>& actions) = 0;
 
             /**
              * @brief update the rendering engine
