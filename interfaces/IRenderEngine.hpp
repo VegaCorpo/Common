@@ -5,6 +5,7 @@
 #include "interfaces/IModule.hpp"
 #include "types/RenderDataBuffer.hpp"
 #include "types/World.hpp"
+#include "types/types.hpp"
 
 namespace common {
     class IRenderEngine : public IModule {
@@ -52,7 +53,7 @@ namespace common {
              */
             virtual void syncIn(const common::WorldState& world) = 0;
 
-            virtual void handleActions(std::queue<common::Action>& actions) = 0;
+            virtual void handleActions(std::queue<common::InputAction>& actions) = 0;
 
             /**
              * @brief update the rendering engine
