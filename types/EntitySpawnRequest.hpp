@@ -2,13 +2,13 @@
 
 #include <string>
 
-#include "types/EntitySpawnRequest.hpp"
 #include "components/acceleration.hpp"
 #include "components/mass.hpp"
 #include "components/orientation.hpp"
 #include "components/position.hpp"
 #include "components/radius.hpp"
 #include "components/velocity.hpp"
+#include "components/name.hpp"
 
 namespace common {
 
