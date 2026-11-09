@@ -1,33 +1,33 @@
 #pragma once
 
 #include <cstdio>
+#include <string>
+
+#include "types/EntitySpawnRequest.hpp"
 #include "components/acceleration.hpp"
 #include "components/mass.hpp"
-#include "components/name.hpp"
 #include "components/orientation.hpp"
 #include "components/position.hpp"
 #include "components/radius.hpp"
 #include "components/velocity.hpp"
-#include "preset/EntityPreset.hpp"
 
-namespace common {
-    struct EntitySpawnRequest {
-        common::components::Name name;
-        common::components::Mass mass;
-        common::components::Radius radius;
-        common::components::Position position;
-        common::components::Velocity velocity;
-        common::components::Acceleration acceleration;
-        common::components::Orientation orientation;
+namespace ui {
 
-        static EntitySpawnRequest fromPreset(const common::EntityPreset &preset);
+    struct EntityPreset {
+        std::string label;
+        common::components::Mass mass{};
+        common::components::Radius radius{};
+        common::components::Position position{};
+        common::components::Velocity velocity{};
+        common::components::Acceleration acceleration{};
+        common::components::Orientation orientation{};
     };
 
-    inline EntitySpawnRequest EntitySpawnRequest::fromPreset(const common::EntityPreset &preset)
+    inline common::EntitySpawnRequest makeSpawnRequest(const EntityPreset &preset)
     {
-        EntitySpawnRequest request{};
+        common::EntitySpawnRequest request{};
 
-        std::snprintf(request.name.value, sizeof(request.name.value), "%s", preset.label);
+        std::snprintf(request.name.value, sizeof(request.name.value), "%s", preset.label.c_str());
         request.mass         = preset.mass;
         request.radius       = preset.radius;
         request.position     = preset.position;
@@ -37,4 +37,5 @@ namespace common {
 
         return request;
     }
-}
+
+} // namespace ui
