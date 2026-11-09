@@ -10,7 +10,7 @@
 #include "components/radius.hpp"
 #include "components/velocity.hpp"
 
-namespace ui {
+namespace common {
 
     struct EntitySpawnRequest {
         common::components::Name name;
