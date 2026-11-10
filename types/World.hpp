@@ -57,5 +57,6 @@ namespace common {
 
             std::optional<common::EntitySpawnRequest> entityAsked;
             bool spawnRequested = false;
-    }; // size ~200+ B by entity
+    };  // Memory footprint: ~74 bytes (fixed stack overhead for metadata/primitives)
+        // + (entityAsked size) * n (dynamic heap allocation for vectors of size n)
 } // namespace common
