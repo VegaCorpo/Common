@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <optional>
 #include "components/acceleration.hpp"
 #include "components/angularVelocity.hpp"
 #include "components/mass.hpp"
@@ -10,6 +11,7 @@
 #include "components/radius.hpp"
 #include "components/texture.hpp"
 #include "components/velocity.hpp"
+#include "EntitySpawnRequest.hpp"
 #include "types.hpp"
 
 namespace common {
@@ -50,5 +52,11 @@ namespace common {
 
             double timeScale;
             size_t camFocusEnt;
-    }; // size 66 B by entity
+
+            bool isEditMode = false;
+
+            std::optional<common::EntitySpawnRequest> entityAsked;
+            bool spawnRequested = false;
+    };  // size 272 B fixed (incl. 176 B optional) + 66 B by entity
+        // min: 272 B (n = 0) | max: 272 + 66 * n B
 } // namespace common
