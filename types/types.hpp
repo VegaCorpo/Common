@@ -47,6 +47,9 @@ namespace common {
         ROTATE_CAMERA_RIGHT,
         ROTATE_CAMERA_MOUSE,
         CHANGE_RESCALE_MODE,
+        TOGGLE_TRAILS,
+        TOGGLE_LABELS,
+        TOGGLE_ICONS,
 
         // UI Actions
         CHANGE_SELECTION,

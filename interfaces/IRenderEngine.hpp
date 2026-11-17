@@ -4,8 +4,8 @@
 #include <queue>
 #include "interfaces/IModule.hpp"
 #include "types/RenderDataBuffer.hpp"
-#include "types/World.hpp"
 #include "types/types.hpp"
+#include "types/World.hpp"
 
 namespace common {
     class IRenderEngine : public IModule {
@@ -52,6 +52,13 @@ namespace common {
              * @param world the latest published world state
              */
             virtual void syncIn(const common::WorldState& world) = 0;
+
+            /**
+             * @brief sync the UI data with the rendering engine
+             *
+             * @param data the latest UI data (camera focused entity, ...)
+             */
+            virtual void syncUIData(const common::SpecificDataUI& data) = 0;
 
             virtual void handleActions(std::queue<common::InputAction>& actions) = 0;
 
