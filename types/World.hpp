@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstddef>
+#include <cstdint>
 #include <vector>
 #include <optional>
 #include "components/acceleration.hpp"
@@ -51,7 +53,7 @@ namespace common {
             std::vector<common::components::Mass> masses;
 
             double timeScale;
-            size_t camFocusEnt;
+            size_t camFocusEnt = SIZE_MAX; // SIZE_MAX: no entity followed
 
             bool isEditMode = false;
 
