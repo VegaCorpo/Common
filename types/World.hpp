@@ -2,8 +2,8 @@
 
 #include <cstddef>
 #include <cstdint>
-#include <vector>
 #include <optional>
+#include <vector>
 #include "components/acceleration.hpp"
 #include "components/angularVelocity.hpp"
 #include "components/mass.hpp"
@@ -13,6 +13,7 @@
 #include "components/radius.hpp"
 #include "components/texture.hpp"
 #include "components/velocity.hpp"
+#include "DisplayOption.hpp"
 #include "EntitySpawnRequest.hpp"
 #include "types.hpp"
 
@@ -59,6 +60,11 @@ namespace common {
 
             std::optional<common::EntitySpawnRequest> entityAsked;
             bool spawnRequested = false;
-    };  // size 272 B fixed (incl. 176 B optional) + 66 B by entity
-        // min: 272 B (n = 0) | max: 272 + 66 * n B
+    }; // size 272 B fixed (incl. 176 B optional) + 66 B by entity
+       // min: 272 B (n = 0) | max: 272 + 66 * n B
+
+    struct PublishedDataRender {
+            std::optional<std::vector<common::DisplayOption>> displayOptions;
+    }; // size 32 B fixed + (96 B + 72 B by param) by option
+       // min: 32 B (nullopt or o = 0) | max: 32 + (96 + 72 * p) * o B
 } // namespace common
