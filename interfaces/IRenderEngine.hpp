@@ -63,13 +63,6 @@ namespace common {
             virtual void handleActions(std::queue<common::InputAction>& actions) = 0;
 
             /**
-             * @brief Get the data published by the rendering engine
-             *
-             * @return the latest renderer data (available display options, ...)
-             */
-            virtual const PublishedDataRender& publishDataRender() = 0;
-
-            /**
              * @brief update the rendering engine
              */
             virtual void update() = 0;

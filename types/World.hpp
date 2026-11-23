@@ -65,6 +65,6 @@ namespace common {
 
     struct PublishedDataRender {
             std::optional<std::vector<common::DisplayOption>> displayOptions;
-    }; // size 32 B fixed + (96 B + 72 B by param) by option
-       // min: 32 B (nullopt or o = 0) | max: 32 + (96 + 72 * p) * o B
+    }; // size 32 B fixed + (96 B + 80 B by param) by option
+       // min: 32 B (nullopt or o = 0) | max: 32 + (96 + 80 * p) * o B
 } // namespace common

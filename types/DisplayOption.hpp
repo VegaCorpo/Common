@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstddef>
 #include <cstdint>
 #include <string>
 #include <variant>
@@ -24,8 +25,8 @@ namespace common {
     struct DisplayOptionParam {
             std::string name;
             std::string description;
-            std::variant<bool, int, float> value;
-    }; // size 72 B
+            std::variant<bool, int, float, std::size_t> value;
+    }; // size 80 B
 
     /**
      * @brief Display option exposed by the renderer (trails, labels, ...)
@@ -38,6 +39,6 @@ namespace common {
             std::string name;
             std::string description;
             std::vector<DisplayOptionParam> params;
-    }; // size 96 B fixed + 72 B by param
-       // min: 96 B (p = 0) | max: 96 + 72 * p B
+    }; // size 96 B fixed + 80 B by param
+       // min: 96 B (p = 0) | max: 96 + 80 * p B
 } // namespace common
