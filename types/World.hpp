@@ -59,6 +59,8 @@ namespace common {
 
             std::optional<common::EntitySpawnRequest> entityAsked;
             bool spawnRequested = false;
+
+            std::optional<size_t> entityToDelete;
     };  // size 272 B fixed (incl. 176 B optional) + 66 B by entity
         // min: 272 B (n = 0) | max: 272 + 66 * n B
 } // namespace common
