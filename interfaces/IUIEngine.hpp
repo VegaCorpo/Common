@@ -1,6 +1,8 @@
 #pragma once
 
 #include <functional>
+#include <queue>
+#include <types/BodyPatch.hpp>
 #include <types/World.hpp>
 
 #include "interfaces/IModule.hpp"
@@ -26,5 +28,9 @@ namespace common {
 
             // Get all the specificDataUI
             virtual const SpecificDataUI &publishDataUi() = 0;
+
+            virtual std::queue<common::BodyPatch> pollEdits() = 0;
+
+            virtual void updateBodies(const common::SpecificDataUI &bodies) = 0;
     };
 } // namespace ui

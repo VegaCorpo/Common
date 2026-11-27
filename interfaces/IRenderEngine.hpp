@@ -71,5 +71,7 @@ namespace common {
              * @brief render the current scene
              */
             virtual void render(std::function<void()> uiRender) = 0;
+
+            virtual void updateBodies(const common::SpecificDataRender& data) = 0;
     };
 } // namespace common
